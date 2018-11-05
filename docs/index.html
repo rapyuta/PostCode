@@ -9,7 +9,8 @@
     new daum.Postcode({
       oncomplete: function(data) {      
         window.PostCode.postMessage(data.postcode, data.zonecode. data.address);    
-  }  
+        }  
+    }).open();
 </script>
 </body>
 </html>
