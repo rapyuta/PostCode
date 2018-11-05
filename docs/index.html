@@ -59,12 +59,8 @@
         if(fullRoadAddr !== ''){
           fullRoadAddr += extraRoadAddr;
         }
-        var postData = {
-            postcode : data.postcode,
-            zonecode : data.zonecode,
-            addr : fullRoadAddr
-        };
-        window.postMessageToiOS(postData);
+        
+        window.PostCode.postMessage(data.zonecode, fullRoadAddr);
       },
       width : '100%',
       height : '100%'
